@@ -8,6 +8,6 @@ import (
 
 var Module = fx.Module(
 	"grpc_infrastructure",
-	core.Module,
 	interceptors.Module,
+	core.Module,
 )
