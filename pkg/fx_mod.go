@@ -11,3 +11,9 @@ var Module = fx.Module(
 	interceptors.Module,
 	core.Module,
 )
+
+var ModuleWithAuth = fx.Module(
+	"grpc_infrastructure",
+	interceptors.ModuleWithAuth,
+	core.Module,
+)
