@@ -9,7 +9,7 @@ var Module = fx.Module(
 	),
 )
 
-var ModuleWithAuth = fx.Provide(
+var ModuleWithAuth = fx.Module(
 	"grpc_interceptors_with_auth",
 	Module,
 	fx.Provide(
