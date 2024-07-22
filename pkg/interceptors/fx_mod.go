@@ -10,7 +10,7 @@ var Module = fx.Module(
 )
 
 var ModuleWithAuth = fx.Provide(
-	"grpc_interceptors",
+	"grpc_interceptors_with_auth",
 	Module,
 	fx.Provide(
 		AsUnaryServerInterceptor(NewAuthInterceptor),
