@@ -47,7 +47,7 @@ func NewAuthInterceptor(provider authLib.AuthProvider, logger *slog.Logger) grpc
 		logger.Info("Authorization succeeded", "method", info.FullMethod, "user", userDetails.Username)
 
 		// Add user details to context
-		ctx = context.WithValue(ctx, "userDetails", userDetails)
+		ctx = context.WithValue(ctx, authLib.UserDetailsKey, userDetails)
 
 		// Call the handler
 		resp, err := handler(ctx, req)
