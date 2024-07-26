@@ -2,7 +2,7 @@ package interceptors
 
 import (
 	"context"
-	authLib "github.com/neiasit/auth-library/pkg/provider"
+	authLib "github.com/neiasit/auth-library/provider"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/metadata"
