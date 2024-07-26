@@ -1,7 +1,7 @@
 package interceptors
 
 import (
-	"github.com/neiasit/grpc-library/pkg/constants"
+	"github.com/neiasit/grpc-library/constants"
 	"go.uber.org/fx"
 )
 

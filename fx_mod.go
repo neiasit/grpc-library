@@ -1,8 +1,8 @@
-package pkg
+package grpc_library
 
 import (
-	"github.com/neiasit/grpc-library/pkg/core"
-	"github.com/neiasit/grpc-library/pkg/interceptors"
+	"github.com/neiasit/grpc-library/core"
+	"github.com/neiasit/grpc-library/interceptors"
 	"go.uber.org/fx"
 )
 
